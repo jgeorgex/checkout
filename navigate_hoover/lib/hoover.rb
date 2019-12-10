@@ -12,4 +12,10 @@ class Hoover
     [x,y]
   end
 
+  def dirt_position(x,y)
+    x = x.to_i
+    y = y.to_i
+    [x,y]
+  end
+
 end

@@ -19,4 +19,15 @@ describe '#start_position' do
     expect(hoover.start_position("1", "1")).to eq([1,1])
   end
 end
+
+describe '#dirt_position' do
+
+  it 'has a dirt position of 0 0' do
+    hoover = Hoover.new
+    expect(hoover.dirt_position("0", "0")).to eq([0,0])
+  end
+end
+
+
+
 end
