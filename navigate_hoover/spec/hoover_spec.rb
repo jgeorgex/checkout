@@ -11,4 +11,5 @@ describe '#start_position' do
     hoover = Hoover.new
     expect(hoover.start_position("1", "1")).to eq([1,1])
   end
+
 end
