@@ -11,21 +11,40 @@ describe '#start_position' do
 
   it 'has a start position of 0 0' do
     hoover = Hoover.new
-    expect(hoover.start_position("0", "0")).to eq([0,0])
+    expect(hoover.start_position("0", "0")).to eq([[0,0]])
   end
 
   it 'has a start position of 1 1' do
     hoover = Hoover.new
-    expect(hoover.start_position("1", "1")).to eq([1,1])
+    expect(hoover.start_position("1", "1")).to eq([[1,1]])
   end
 end
 
-describe '#dirt_position' do
+describe '#dirt_positions' do
 
-  it 'has a dirt position of 0 0' do
+  it 'has a dirt positions of 0 0' do
     hoover = Hoover.new
-    expect(hoover.dirt_position("0", "0")).to eq([0,0])
+    expect(hoover.dirt_positions("0", "0")).to eq([0,0])
   end
+
+  it 'has a dirt positions of 0 0' do
+    hoover = Hoover.new
+    expect(hoover.dirt_positions("1", "3")).to eq([1,3])
+  end
+
+  it 'has a dirt positions of 0 0' do
+    hoover = Hoover.new
+    expect(hoover.dirt_positions("3", "3")).to eq([3,3])
+  end
+
+describe '#hoover_route' do
+    it 'has a route of 0 0, 0 1' do
+      hoover = Hoover.new
+      expect(hoover.hoover_route(["N"])).to eq([[0,0],[0,1]])
+    end
+end
+
+
 end
 
 
