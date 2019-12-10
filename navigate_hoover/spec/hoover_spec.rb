@@ -1,5 +1,12 @@
 require 'hoover'
 
+describe 'room_dimensions' do
+  it 'has a dimension of 5,5' do
+    hoover = Hoover.new
+    expect(hoover.room_dimensions("5", "5")).to eq([5,5])
+end
+
+
 describe '#start_position' do
 
   it 'has a start position of 0 0' do
@@ -11,5 +18,5 @@ describe '#start_position' do
     hoover = Hoover.new
     expect(hoover.start_position("1", "1")).to eq([1,1])
   end
-
+end
 end
