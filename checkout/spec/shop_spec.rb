@@ -16,4 +16,9 @@ describe '#checkout' do
     expect(shop.checkout('C')).to eq(20)
   end
 
+  it 'returns 15 when input is D' do
+    shop = Shop.new
+    expect(shop.checkout('D')).to eq(15)
+  end
+
 end

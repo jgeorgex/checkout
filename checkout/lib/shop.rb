@@ -5,8 +5,10 @@ class Shop
       50
     elsif sku == 'B'
       30
-    else
+    elsif sku == 'C'
       20
+    elsif sku == 'D'
+      15
     end
   end
 
