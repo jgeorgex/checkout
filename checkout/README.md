@@ -29,26 +29,27 @@ param[0] = eg. 'AAB', a String containing the SKUs of all the products in the ba
 @return = eg. 120, an Integer representing the total checkout value of the items
 
 Acceptance Criteria
-shop.checkout('aBc') # => -1
-shop.checkout('-B8x') # => -1
-shop.checkout(18) # => -1
-shop.checkout('AA') # => 100
-shop.checkout('ABCD') # => 115
-shop.checkout('AAA') # => 130
-shop.checkout('AAAAAA') # => 260
+
+shop.checkout('aBc') # => -1 <br>
+shop.checkout('-B8x') # => -1 <br>
+shop.checkout(18) # => -1 <br>
+shop.checkout('AA') # => 100 <br>
+shop.checkout('ABCD') # => 115 <br>
+shop.checkout('AAA') # => 130 <br>
+shop.checkout('AAAAAA') # => 260 <br>
 
 Test Plan
 
-shop.checkout('A') # => 50
-shop.checkout('B') # => 30
-shop.checkout('C') # => 20
-shop.checkout('D') # => 15
-shop.checkout('AA') # => 100
-shop.checkout('ABCD') # => 115
-shop.checkout('AAA') # => 130
-shop.checkout('AAAAAA') # => 260
-shop.checkout('BB') # => 45
-shop.checkout('BBBB') # => 90
-shop.checkout('aBc') # => -1
-shop.checkout('-B8x') # => -1
-shop.checkout(18) # => -1
+shop.checkout('A') # => 50 <br>
+shop.checkout('B') # => 30 <br>
+shop.checkout('C') # => 20 <br>
+shop.checkout('D') # => 15 <br>
+shop.checkout('AA') # => 100 <br>
+shop.checkout('ABCD') # => 115 <br>
+shop.checkout('AAA') # => 130 <br>
+shop.checkout('AAAAAA') # => 260 <br>
+shop.checkout('BB') # => 45 <br>
+shop.checkout('BBBB') # => 90 <br>
+shop.checkout('aBc') # => -1 <br>
+shop.checkout('-B8x') # => -1 <br>
+shop.checkout(18) # => -1 <br>

@@ -1,7 +1,11 @@
 class Shop
 
   def checkout(sku)
-    50
+    if sku == 'A'
+      50
+    else
+      30
+    end  
   end
 
 end

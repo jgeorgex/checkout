@@ -5,4 +5,10 @@ describe '#checkout' do
     shop = Shop.new
     expect(shop.checkout('A')).to eq(50)
   end
+
+  it 'returns 30 when input is B' do
+    shop = Shop.new
+    expect(shop.checkout('B')).to eq(30)
+  end
+
 end
