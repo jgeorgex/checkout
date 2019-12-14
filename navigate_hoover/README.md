@@ -35,7 +35,7 @@ Initially assume dirt position is always a valid coordinate.
 [[1,1],[2,2]] => [[1,1,],[2,2]]<br>
 
 
-Hoover Route<br>
+Hoover Route
 Initially assume all instructions are in upper case<br>
 Start Position, Route => Route Taken
 
